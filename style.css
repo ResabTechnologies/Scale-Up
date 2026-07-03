@@ -40,7 +40,7 @@
 /* ===== RESET & BASE ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; overflow-x: hidden; }
 
 body {
   font-family: 'Outfit', sans-serif;
@@ -158,8 +158,18 @@ a  { text-decoration: none; color: inherit; }
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .brand-accent { color: var(--gold); }
+
+/* Prevent brand from pushing toggler off screen */
+.navbar-brand {
+  min-width: 0;
+  flex-shrink: 1;
+  max-width: calc(100% - 60px);
+}
 
 .navbar-nav .nav-link {
   color: rgba(255,255,255,0.85) !important;
@@ -1616,6 +1626,10 @@ select.form-control-dark option { background: var(--dark-bg); color: #fff; }
   .hero-cta-group .btn { width: 100%; max-width: 300px; }
   .navbar-collapse { background: rgba(9,21,16,0.98); backdrop-filter: blur(20px); border-radius: 16px; padding: 20px; margin-top: 12px; border: 1px solid var(--border-gold); }
   #nav-register-btn { width: 100%; text-align: center; margin-top: 8px; }
+  /* Keep toggler always visible and in-frame */
+  #mainNav .container { flex-wrap: nowrap; }
+  .navbar-toggler { flex-shrink: 0; margin-left: 8px; }
+  .brand-text { font-size: 0.95rem; }
 }
 
 /* ===== AOS OVERRIDE ===== */
