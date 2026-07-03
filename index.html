@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScaleUp Business Club — Business Networking Hub | July 9, 2026</title>
+  <meta name="description" content="Join ScaleUp Business Club's premier Business Networking Hub on July 9, 2026. Connect with top entrepreneurs, leaders, and companies. Empowering Entrepreneurs & Leaders." />
+  <meta name="keywords" content="ScaleUp Business Club, Business Networking, Entrepreneurs, Leaders, July 2026, Connect Collaborate Grow" />
+  <meta property="og:title" content="ScaleUp Business Club — Business Networking Hub" />
+  <meta property="og:description" content="Connect. Collaborate. Grow. Join us on July 9, 2026." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <img src="logo/660302614_17894317521435590_6091469226346069553_n.jpg" alt="ScaleUp Logo" class="preloader-logo" />
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+      <p class="preloader-text">Loading Experience...</p>
+    </div>
+  </div>
+
+  <!-- ===== PARTICLES CANVAS ===== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <img src="logo/660302614_17894317521435590_6091469226346069553_n.jpg" alt="ScaleUp Business Club Logo" class="nav-logo" />
+        <span class="brand-text">ScaleUp<span class="brand-accent"> Business Club</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon"><span></span><span></span><span></span></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+          <li class="nav-item"><a class="nav-link" href="#companies">Companies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-2"><a class="btn btn-gold btn-sm px-3" href="#register" id="nav-register-btn">Register Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-bg" style="background-image: url('images/hero_banner.png');"></div>
+
+    <!-- Floating Gold Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="container hero-content text-center">
+      <div class="hero-badge" data-aos="fade-down" data-aos-delay="200">
+        <i class="bi bi-calendar3"></i>&nbsp; July 9, 2026 &nbsp;|&nbsp; <i class="bi bi-geo-alt-fill"></i>&nbsp; Grand Business Gala
+      </div>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="400">
+        <span class="title-line-1">Business Networking Hub</span>
+        <span class="title-line-2">Connect. <span class="gold-text">Collaborate.</span> Grow.</span>
+      </h1>
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="600">
+        Empowering Entrepreneurs &amp; Leaders
+      </p>
+      <p class="hero-desc" data-aos="fade-up" data-aos-delay="700">
+        Join the most powerful gathering of business minds, visionary leaders, and<br class="d-none d-md-block"/>
+        industry pioneers at ScaleUp Business Club's signature networking event.
+      </p>
+
+      <!-- Countdown Timer -->
+      <div class="countdown-wrapper" data-aos="zoom-in" data-aos-delay="800">
+        <div class="countdown-item"><span class="count-num" id="count-days">00</span><span class="count-label">Days</span></div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-item"><span class="count-num" id="count-hours">00</span><span class="count-label">Hours</span></div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-item"><span class="count-num" id="count-minutes">00</span><span class="count-label">Minutes</span></div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-item"><span class="count-num" id="count-seconds">00</span><span class="count-label">Seconds</span></div>
+      </div>
+
+      <div class="hero-cta-group" data-aos="fade-up" data-aos-delay="1000">
+        <a href="#register" class="btn btn-gold btn-lg px-5 me-3" id="hero-register-btn">
+          <i class="bi bi-ticket-perforated me-2"></i>Register Now
+        </a>
+        <a href="#programs" class="btn btn-outline-gold btn-lg px-5" id="hero-learn-btn">
+          <i class="bi bi-play-circle me-2"></i>Explore Programs
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== STATS TICKER ===== -->
+  <div class="stats-ticker">
+    <div class="ticker-track">
+      <span class="ticker-item"><i class="bi bi-people-fill"></i> 500+ Attendees</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item"><i class="bi bi-buildings-fill"></i> 80+ Companies</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item"><i class="bi bi-mic-fill"></i> 12+ Speakers</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item"><i class="bi bi-briefcase-fill"></i> 6 Programs</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item"><i class="bi bi-trophy-fill"></i> 10+ Awards</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item"><i class="bi bi-handshake-fill"></i> 1000+ Connections</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item"><i class="bi bi-people-fill"></i> 500+ Attendees</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item"><i class="bi bi-buildings-fill"></i> 80+ Companies</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item"><i class="bi bi-mic-fill"></i> 12+ Speakers</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item"><i class="bi bi-briefcase-fill"></i> 6 Programs</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item"><i class="bi bi-trophy-fill"></i> 10+ Awards</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item"><i class="bi bi-handshake-fill"></i> 1000+ Connections</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section-dark about-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="about-img-stack">
+            <img src="images/networking_group.png" alt="Business Networking Group" class="about-img-main" />
+            <img src="images/keynote_speaker.png" alt="Keynote Speaker" class="about-img-accent" />
+            <div class="about-badge-float">
+              <i class="bi bi-award-fill"></i>
+              <span>Premier Event<br/>of 2026</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="150">
+          <div class="section-label">About The Event</div>
+          <h2 class="section-title">Where Business Leaders <span class="gold-text">Unite &amp; Thrive</span></h2>
+          <p class="section-body">
+            ScaleUp Business Club hosts its most ambitious gathering yet — the <strong>Business Networking Hub</strong>. This exclusive event brings together the brightest entrepreneurs, CEOs, investors, and thought leaders under one roof for a transformative day of connections, knowledge, and growth.
+          </p>
+          <p class="section-body">
+            From powerful keynote sessions to curated one-on-one networking, every touchpoint of this event is designed to accelerate your business journey and expand your professional ecosystem.
+          </p>
+          <div class="about-stats-row">
+            <div class="about-stat">
+              <span class="stat-number counter-num" data-target="500">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Attendees</span>
+            </div>
+            <div class="about-stat-divider"></div>
+            <div class="about-stat">
+              <span class="stat-number counter-num" data-target="80">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Companies</span>
+            </div>
+            <div class="about-stat-divider"></div>
+            <div class="about-stat">
+              <span class="stat-number counter-num" data-target="12">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Speakers</span>
+            </div>
+          </div>
+          <a href="#register" class="btn btn-gold mt-4 px-4">
+            <i class="bi bi-arrow-right-circle me-2"></i>Secure Your Spot
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAMS SECTION ===== -->
+  <section id="programs" class="section-darker programs-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label">What's Inside</div>
+        <h2 class="section-title">Event <span class="gold-text">Programs</span></h2>
+        <p class="section-subtitle">Six power-packed programs crafted for your growth</p>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="program-card">
+            <div class="program-icon-wrap"><i class="bi bi-mic-fill"></i></div>
+            <div class="program-img-wrap">
+              <img src="images/keynote_speaker.png" alt="Keynote Session" />
+            </div>
+            <h3 class="program-title">Keynote Sessions</h3>
+            <p class="program-desc">Visionary talks from industry trailblazers who have built empires from scratch. Get inspired by real stories of success, failure, and transformation.</p>
+            <div class="program-tag">Inspiring</div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="program-card">
+            <div class="program-icon-wrap"><i class="bi bi-people-fill"></i></div>
+            <div class="program-img-wrap">
+              <img src="images/networking_group.png" alt="Networking Session" />
+            </div>
+            <h3 class="program-title">Power Networking</h3>
+            <p class="program-desc">Curated speed-networking rounds connecting you with decision-makers, investors, and potential collaborators in structured, high-energy sessions.</p>
+            <div class="program-tag">Connect</div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="program-card">
+            <div class="program-icon-wrap"><i class="bi bi-laptop-fill"></i></div>
+            <div class="program-img-wrap">
+              <img src="images/workshop_session.png" alt="Workshop Session" />
+            </div>
+            <h3 class="program-title">Business Workshops</h3>
+            <p class="program-desc">Hands-on, practical workshops covering digital transformation, funding strategies, brand building, and leadership for modern businesses.</p>
+            <div class="program-tag">Learn</div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="program-card">
+            <div class="program-icon-wrap"><i class="bi bi-chat-square-dots-fill"></i></div>
+            <div class="program-img-wrap">
+              <img src="images/panel_discussion.png" alt="Panel Discussion" />
+            </div>
+            <h3 class="program-title">Panel Discussions</h3>
+            <p class="program-desc">Multi-expert panels diving deep into industry trends, market disruptions, and future business landscapes with live audience Q&amp;A.</p>
+            <div class="program-tag">Engage</div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="program-card">
+            <div class="program-icon-wrap"><i class="bi bi-trophy-fill"></i></div>
+            <div class="program-img-wrap">
+              <img src="images/awards_gala.png" alt="Awards Ceremony" />
+            </div>
+            <h3 class="program-title">Awards &amp; Recognition</h3>
+            <p class="program-desc">Celebrating business excellence with prestigious awards for Outstanding Entrepreneur, Best Startup, Business Innovator, and many more.</p>
+            <div class="program-tag">Celebrate</div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="program-card">
+            <div class="program-icon-wrap"><i class="bi bi-building-fill"></i></div>
+            <div class="program-img-wrap">
+              <img src="images/venue_exterior.png" alt="Gala Dinner" />
+            </div>
+            <h3 class="program-title">Grand Gala Dinner</h3>
+            <p class="program-desc">An exclusive evening of fine dining, entertainment, and networking in an opulent setting — the perfect close to a transformative day.</p>
+            <div class="program-tag">Exclusive</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SPEAKERS SECTION ===== -->
+  <section id="speakers" class="section-dark speakers-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label">Meet The Experts</div>
+        <h2 class="section-title">Featured <span class="gold-text">Speakers</span></h2>
+        <p class="section-subtitle">Visionaries and leaders who will shape your thinking</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="0">
+          <div class="speaker-card">
+            <div class="speaker-img-wrap">
+              <img src="images/speaker1.png" alt="Rajesh Kumar" />
+              <div class="speaker-overlay">
+                <div class="speaker-social">
+                  <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="speaker-info">
+              <h4>Rajesh Kumar</h4>
+              <p>CEO &amp; Serial Entrepreneur</p>
+              <div class="speaker-topic"><i class="bi bi-chat-quote-fill me-1"></i>Scaling Your Vision</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="speaker-card">
+            <div class="speaker-img-wrap">
+              <img src="images/speaker2.png" alt="Priya Menon" />
+              <div class="speaker-overlay">
+                <div class="speaker-social">
+                  <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="speaker-info">
+              <h4>Priya Menon</h4>
+              <p>Founder &amp; Investor</p>
+              <div class="speaker-topic"><i class="bi bi-chat-quote-fill me-1"></i>Women in Business</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="speaker-card">
+            <div class="speaker-img-wrap">
+              <img src="images/speaker3.png" alt="Arjun Nair" />
+              <div class="speaker-overlay">
+                <div class="speaker-social">
+                  <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="speaker-info">
+              <h4>Arjun Nair</h4>
+              <p>MD &amp; Business Strategist</p>
+              <div class="speaker-topic"><i class="bi bi-chat-quote-fill me-1"></i>Growth Hacking 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="speaker-card">
+            <div class="speaker-img-wrap">
+              <img src="images/speaker4.png" alt="Deepa Sharma" />
+              <div class="speaker-overlay">
+                <div class="speaker-social">
+                  <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="speaker-info">
+              <h4>Deepa Sharma</h4>
+              <p>Leadership Coach</p>
+              <div class="speaker-topic"><i class="bi bi-chat-quote-fill me-1"></i>Mindset &amp; Leadership</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- More Speakers CTA -->
+      <div class="text-center mt-5" data-aos="fade-up">
+        <p class="text-muted-gold">+ 8 more speakers to be announced</p>
+        <a href="#register" class="btn btn-outline-gold mt-2 px-4">
+          <i class="bi bi-bell me-2"></i>Get Notified
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCHEDULE SECTION ===== -->
+  <section id="schedule" class="section-darker schedule-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label">July 9, 2026</div>
+        <h2 class="section-title">Event <span class="gold-text">Schedule</span></h2>
+        <p class="section-subtitle">A full day of inspiration, learning, and connection</p>
+      </div>
+
+      <div class="schedule-timeline">
+
+        <div class="schedule-item" data-aos="fade-right" data-aos-delay="0">
+          <div class="schedule-time">08:30 AM</div>
+          <div class="schedule-dot"></div>
+          <div class="schedule-card">
+            <div class="schedule-icon"><i class="bi bi-door-open-fill"></i></div>
+            <h4>Registration &amp; Welcome Breakfast</h4>
+            <p>Check-in, collect your badge, enjoy breakfast and begin early connections.</p>
+            <span class="schedule-badge">Opening</span>
+          </div>
+        </div>
+
+        <div class="schedule-item schedule-right" data-aos="fade-left" data-aos-delay="100">
+          <div class="schedule-time">09:30 AM</div>
+          <div class="schedule-dot"></div>
+          <div class="schedule-card">
+            <div class="schedule-icon"><i class="bi bi-mic-fill"></i></div>
+            <h4>Opening Keynote Address</h4>
+            <p>Inaugural address by the Chief Guest — Setting the tone for the day.</p>
+            <span class="schedule-badge">Keynote</span>
+          </div>
+        </div>
+
+        <div class="schedule-item" data-aos="fade-right" data-aos-delay="200">
+          <div class="schedule-time">10:30 AM</div>
+          <div class="schedule-dot"></div>
+          <div class="schedule-card">
+            <div class="schedule-icon"><i class="bi bi-people-fill"></i></div>
+            <h4>Power Networking Round 1</h4>
+            <p>Structured speed-networking with pre-matched business profiles.</p>
+            <span class="schedule-badge">Networking</span>
+          </div>
+        </div>
+
+        <div class="schedule-item schedule-right" data-aos="fade-left" data-aos-delay="300">
+          <div class="schedule-time">12:00 PM</div>
+          <div class="schedule-dot"></div>
+          <div class="schedule-card">
+            <div class="schedule-icon"><i class="bi bi-chat-square-dots-fill"></i></div>
+            <h4>Panel Discussion: Future of Business</h4>
+            <p>Expert panelists debate AI, sustainability, and the next decade of entrepreneurship.</p>
+            <span class="schedule-badge">Panel</span>
+          </div>
+        </div>
+
+        <div class="schedule-item" data-aos="fade-right" data-aos-delay="400">
+          <div class="schedule-time">01:00 PM</div>
+          <div class="schedule-dot"></div>
+          <div class="schedule-card">
+            <div class="schedule-icon"><i class="bi bi-egg-fried"></i></div>
+            <h4>Networking Lunch</h4>
+            <p>Premium buffet lunch with open networking in a relaxed atmosphere.</p>
+            <span class="schedule-badge">Lunch</span>
+          </div>
+        </div>
+
+        <div class="schedule-item schedule-right" data-aos="fade-left" data-aos-delay="500">
+          <div class="schedule-time">02:30 PM</div>
+          <div class="schedule-dot"></div>
+          <div class="schedule-card">
+            <div class="schedule-icon"><i class="bi bi-laptop-fill"></i></div>
+            <h4>Business Workshops (Parallel Tracks)</h4>
+            <p>Choose from 3 simultaneous workshops: Digital Growth, Funding &amp; Investment, Brand Strategy.</p>
+            <span class="schedule-badge">Workshop</span>
+          </div>
+        </div>
+
+        <div class="schedule-item" data-aos="fade-right" data-aos-delay="600">
+          <div class="schedule-time">04:30 PM</div>
+          <div class="schedule-dot"></div>
+          <div class="schedule-card">
+            <div class="schedule-icon"><i class="bi bi-trophy-fill"></i></div>
+            <h4>Awards &amp; Recognition Ceremony</h4>
+            <p>Felicitation of outstanding businesses, entrepreneurs, and leaders of the year.</p>
+            <span class="schedule-badge">Awards</span>
+          </div>
+        </div>
+
+        <div class="schedule-item schedule-right" data-aos="fade-left" data-aos-delay="700">
+          <div class="schedule-time">07:00 PM</div>
+          <div class="schedule-dot"></div>
+          <div class="schedule-card schedule-card-last">
+            <div class="schedule-icon"><i class="bi bi-stars"></i></div>
+            <h4>Grand Gala Dinner &amp; Closing</h4>
+            <p>Evening gala with live entertainment, fine dining, and the closing ceremony.</p>
+            <span class="schedule-badge">Gala</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPANIES / PARTNERS SECTION ===== -->
+  <section id="companies" class="section-dark companies-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label">Our Ecosystem</div>
+        <h2 class="section-title">Participating <span class="gold-text">Companies</span></h2>
+        <p class="section-subtitle">Industry leaders and innovators joining the conversation</p>
+      </div>
+
+      <!-- Company Logos Marquee -->
+      <div class="companies-marquee-wrapper" data-aos="fade-up" data-aos-delay="200">
+        <div class="companies-marquee">
+          <div class="marquee-track">
+            <!-- Row 1 -->
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-building-fill-gear"></i><span>TechNova Solutions</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-graph-up-arrow"></i><span>FinEdge Capital</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-cpu-fill"></i><span>DigiCore Systems</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-globe-asia-australia"></i><span>GlobalTrade Co.</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-lightbulb-fill"></i><span>InnovateLab</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-shield-fill-check"></i><span>SecureVault Inc.</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-cloud-fill"></i><span>CloudBase Pro</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-briefcase-fill"></i><span>LeadBiz Group</span></div></div>
+            <!-- Duplicate for seamless loop -->
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-building-fill-gear"></i><span>TechNova Solutions</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-graph-up-arrow"></i><span>FinEdge Capital</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-cpu-fill"></i><span>DigiCore Systems</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-globe-asia-australia"></i><span>GlobalTrade Co.</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-lightbulb-fill"></i><span>InnovateLab</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-shield-fill-check"></i><span>SecureVault Inc.</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-cloud-fill"></i><span>CloudBase Pro</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-briefcase-fill"></i><span>LeadBiz Group</span></div></div>
+          </div>
+        </div>
+
+        <!-- Row 2 (reverse) -->
+        <div class="companies-marquee marquee-reverse mt-3">
+          <div class="marquee-track">
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-rocket-fill"></i><span>LaunchPad Ventures</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-bar-chart-fill"></i><span>GrowthMatrix</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-heart-fill"></i><span>WellBiz Health</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-house-fill"></i><span>PropScale Realty</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-palette-fill"></i><span>CreativeForce Agency</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-truck-front-fill"></i><span>LogiFlow Freight</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-currency-rupee"></i><span>Wealth Masters</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-camera-fill"></i><span>MediaEdge Studios</span></div></div>
+            <!-- Duplicate -->
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-rocket-fill"></i><span>LaunchPad Ventures</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-bar-chart-fill"></i><span>GrowthMatrix</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-heart-fill"></i><span>WellBiz Health</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-house-fill"></i><span>PropScale Realty</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-palette-fill"></i><span>CreativeForce Agency</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-truck-front-fill"></i><span>LogiFlow Freight</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-currency-rupee"></i><span>Wealth Masters</span></div></div>
+            <div class="company-logo-card"><div class="company-logo-inner"><i class="bi bi-camera-fill"></i><span>MediaEdge Studios</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5" data-aos="fade-up">
+        <p class="gold-text fw-semibold">80+ companies confirmed. Want to be part of the ecosystem?</p>
+        <a href="#contact" class="btn btn-gold mt-2 px-4" id="company-partner-btn">
+          <i class="bi bi-building me-2"></i>Become a Partner
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section id="gallery" class="section-darker gallery-section">
+
+    <!-- Decorative BG Elements -->
+    <div class="gallery-bg-glow gallery-bg-glow-left"></div>
+    <div class="gallery-bg-glow gallery-bg-glow-right"></div>
+
+    <div class="container position-relative">
+
+      <!-- Header -->
+      <div class="text-center gallery-header" data-aos="fade-up">
+        <div class="section-label"><i class="bi bi-images me-1"></i> Photo Highlights</div>
+        <h2 class="section-title">Event <span class="gold-text">Gallery</span></h2>
+        <p class="section-subtitle">Relive the magic — moments that defined our journey</p>
+        <div class="gallery-header-line"><span></span></div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="gallery-filters" data-aos="fade-up" data-aos-delay="100">
+        <button class="gfilter-btn active" data-filter="all">
+          <i class="bi bi-grid-3x3-gap-fill me-1"></i> All Moments
+        </button>
+        <button class="gfilter-btn" data-filter="networking">
+          <i class="bi bi-people-fill me-1"></i> Networking
+        </button>
+        <button class="gfilter-btn" data-filter="keynote">
+          <i class="bi bi-mic-fill me-1"></i> Keynote
+        </button>
+        <button class="gfilter-btn" data-filter="awards">
+          <i class="bi bi-trophy-fill me-1"></i> Awards
+        </button>
+        <button class="gfilter-btn" data-filter="venue">
+          <i class="bi bi-building me-1"></i> Venue
+        </button>
+      </div>
+
+      <!-- Mosaic Gallery Grid -->
+      <div class="gallery-mosaic" data-aos="fade-up" data-aos-delay="200">
+
+        <!-- Item 1 — TALL LEFT -->
+        <div class="gitem gitem-tall" data-cat="networking">
+          <div class="gitem-inner">
+            <img src="images/gallery_1.png" alt="Business Gala Highlights" loading="lazy" />
+            <div class="gitem-overlay">
+              <div class="gitem-overlay-content">
+                <div class="gitem-cat-badge"><i class="bi bi-people-fill"></i> Networking</div>
+                <h4>Business Gala Highlights</h4>
+                <p>A night of celebration and powerful connections</p>
+                <button class="gitem-zoom-btn" aria-label="View full image">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+              </div>
+            </div>
+            <div class="gitem-num">01</div>
+          </div>
+        </div>
+
+        <!-- Item 2 — TOP RIGHT -->
+        <div class="gitem" data-cat="awards">
+          <div class="gitem-inner">
+            <img src="images/gallery_2.png" alt="Awards Ceremony" loading="lazy" />
+            <div class="gitem-overlay">
+              <div class="gitem-overlay-content">
+                <div class="gitem-cat-badge"><i class="bi bi-trophy-fill"></i> Awards</div>
+                <h4>Awards Night</h4>
+                <p>Recognising excellence in entrepreneurship</p>
+                <button class="gitem-zoom-btn" aria-label="View full image">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+              </div>
+            </div>
+            <div class="gitem-num">02</div>
+          </div>
+        </div>
+
+        <!-- Item 3 — TOP FAR RIGHT -->
+        <div class="gitem" data-cat="networking">
+          <div class="gitem-inner">
+            <img src="images/gallery_3.png" alt="Cocktail Networking" loading="lazy" />
+            <div class="gitem-overlay">
+              <div class="gitem-overlay-content">
+                <div class="gitem-cat-badge"><i class="bi bi-people-fill"></i> Networking</div>
+                <h4>Cocktail Networking</h4>
+                <p>Deals made over fine conversations</p>
+                <button class="gitem-zoom-btn" aria-label="View full image">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+              </div>
+            </div>
+            <div class="gitem-num">03</div>
+          </div>
+        </div>
+
+        <!-- Item 4 — WIDE BOTTOM LEFT -->
+        <div class="gitem gitem-wide" data-cat="keynote">
+          <div class="gitem-inner">
+            <img src="images/workshop_session.png" alt="Workshop Session" loading="lazy" />
+            <div class="gitem-overlay">
+              <div class="gitem-overlay-content">
+                <div class="gitem-cat-badge"><i class="bi bi-mic-fill"></i> Keynote</div>
+                <h4>Workshop Sessions</h4>
+                <p>Hands-on learning with industry experts</p>
+                <button class="gitem-zoom-btn" aria-label="View full image">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+              </div>
+            </div>
+            <div class="gitem-num">04</div>
+          </div>
+        </div>
+
+        <!-- Item 5 — BOTTOM RIGHT -->
+        <div class="gitem" data-cat="keynote">
+          <div class="gitem-inner">
+            <img src="images/panel_discussion.png" alt="Panel Discussion" loading="lazy" />
+            <div class="gitem-overlay">
+              <div class="gitem-overlay-content">
+                <div class="gitem-cat-badge"><i class="bi bi-chat-square-dots-fill"></i> Panel</div>
+                <h4>Panel Insights</h4>
+                <p>Industry leaders sharing their vision</p>
+                <button class="gitem-zoom-btn" aria-label="View full image">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+              </div>
+            </div>
+            <div class="gitem-num">05</div>
+          </div>
+        </div>
+
+        <!-- Item 6 — BOTTOM FAR RIGHT -->
+        <div class="gitem" data-cat="venue">
+          <div class="gitem-inner">
+            <img src="images/venue_exterior.png" alt="The Venue" loading="lazy" />
+            <div class="gitem-overlay">
+              <div class="gitem-overlay-content">
+                <div class="gitem-cat-badge"><i class="bi bi-building"></i> Venue</div>
+                <h4>The Grand Venue</h4>
+                <p>An iconic location for an iconic event</p>
+                <button class="gitem-zoom-btn" aria-label="View full image">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+              </div>
+            </div>
+            <div class="gitem-num">06</div>
+          </div>
+        </div>
+
+      </div><!-- end .gallery-mosaic -->
+
+      <!-- Bottom CTA Strip -->
+      <div class="gallery-cta-strip" data-aos="fade-up" data-aos-delay="300">
+        <div class="gallery-cta-left">
+          <i class="bi bi-camera-fill"></i>
+          <span>6 photos — more coming after July 9, 2026</span>
+        </div>
+        <a href="#register" class="btn btn-gold btn-sm px-4">
+          <i class="bi bi-ticket-perforated me-2"></i>Be Part of the Story
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section class="section-dark testimonials-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label">What They Say</div>
+        <h2 class="section-title">Voices of <span class="gold-text">Success</span></h2>
+      </div>
+
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="200">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="testimonial-card mx-auto">
+              <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+              <p class="testimonial-text">"ScaleUp Business Club's networking event completely transformed my business trajectory. I closed three partnerships within a week of attending. The quality of connections is unmatched!"</p>
+              <div class="testimonial-author">
+                <img src="images/speaker1.png" alt="Rajesh K." />
+                <div>
+                  <strong>Rajesh K.</strong>
+                  <span>Founder, TechNova Solutions</span>
+                </div>
+              </div>
+              <div class="testimonial-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="testimonial-card mx-auto">
+              <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+              <p class="testimonial-text">"An extraordinary event that genuinely empowers women entrepreneurs. The panel discussions were eye-opening and the community is incredibly supportive."</p>
+              <div class="testimonial-author">
+                <img src="images/speaker2.png" alt="Priya M." />
+                <div>
+                  <strong>Priya M.</strong>
+                  <span>CEO, GrowthMatrix</span>
+                </div>
+              </div>
+              <div class="testimonial-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="testimonial-card mx-auto">
+              <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+              <p class="testimonial-text">"The workshops were incredibly practical. I walked away with a concrete action plan for my company's next phase of growth. Best business event of the year!"</p>
+              <div class="testimonial-author">
+                <img src="images/speaker3.png" alt="Arjun N." />
+                <div>
+                  <strong>Arjun N.</strong>
+                  <span>MD, LeadBiz Group</span>
+                </div>
+              </div>
+              <div class="testimonial-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-indicators testimonial-indicators">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REGISTER SECTION ===== -->
+  <section id="register" class="section-darker register-section">
+    <div class="register-bg-overlay"></div>
+    <div class="container position-relative">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="section-label">Limited Seats</div>
+          <h2 class="section-title">Register <span class="gold-text">Today</span></h2>
+          <p class="section-body">Don't miss the most impactful business event of 2026. Seats are filling fast — secure your place now and be part of something extraordinary.</p>
+
+          <div class="register-benefits">
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Full-day event access</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Welcome breakfast &amp; lunch</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Networking sessions</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Workshop materials</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Awards &amp; gala dinner invite</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> ScaleUp membership kit</div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="150">
+          <div class="register-form-card">
+            <h3><i class="bi bi-ticket-perforated-fill me-2 gold-text"></i>Secure Your Seat</h3>
+            <form id="registerForm" novalidate>
+              <div class="mb-3">
+                <label for="reg-name" class="form-label">Full Name *</label>
+                <input type="text" class="form-control form-control-dark" id="reg-name" placeholder="Your full name" required />
+              </div>
+              <div class="mb-3">
+                <label for="reg-email" class="form-label">Email Address *</label>
+                <input type="email" class="form-control form-control-dark" id="reg-email" placeholder="your@email.com" required />
+              </div>
+              <div class="mb-3">
+                <label for="reg-phone" class="form-label">Phone Number *</label>
+                <input type="tel" class="form-control form-control-dark" id="reg-phone" placeholder="+91 XXXXX XXXXX" required />
+              </div>
+              <div class="mb-3">
+                <label for="reg-company" class="form-label">Company / Business</label>
+                <input type="text" class="form-control form-control-dark" id="reg-company" placeholder="Your company name" />
+              </div>
+              <div class="mb-3">
+                <label for="reg-role" class="form-label">Your Role</label>
+                <select class="form-control form-control-dark" id="reg-role">
+                  <option value="">Select your role</option>
+                  <option>Entrepreneur / Founder</option>
+                  <option>CEO / MD</option>
+                  <option>Investor</option>
+                  <option>Corporate Professional</option>
+                  <option>Startup Enthusiast</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-gold w-100 btn-lg" id="submit-register-btn">
+                <i class="bi bi-send-fill me-2"></i>Register Now
+              </button>
+            </form>
+            <p class="register-note mt-3">By registering you agree to our terms. Your information is safe with us.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section-dark contact-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Contact <span class="gold-text">Us</span></h2>
+        <p class="section-subtitle">We'd love to hear from you</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="contact-card text-center">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <h4>Venue</h4>
+            <p>Grand Convention Hall<br/>Business District, City</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-card text-center">
+            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+            <h4>Call Us</h4>
+            <p><a href="tel:+919999999999">+91 99999 99999</a><br/><a href="tel:+918888888888">+91 88888 88888</a></p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-card text-center">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <h4>Email Us</h4>
+            <p><a href="mailto:info@scaleupbusinessclub.com">info@scaleupbusinessclub.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Links -->
+      <div class="text-center mt-5" data-aos="fade-up">
+        <div class="social-links">
+          <a href="#" aria-label="Facebook" class="social-link"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram" class="social-link"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn" class="social-link"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="Twitter" class="social-link"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="YouTube" class="social-link"><i class="bi bi-youtube"></i></a>
+          <a href="#" aria-label="WhatsApp" class="social-link"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="main-footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <img src="logo/660302614_17894317521435590_6091469226346069553_n.jpg" alt="ScaleUp Business Club" />
+            <div>
+              <h5>ScaleUp Business Club</h5>
+              <p>Business Networking Hub</p>
+            </div>
+          </div>
+          <p class="footer-tagline">Connect. Collaborate. Grow.</p>
+          <p class="footer-desc">Empowering Entrepreneurs &amp; Leaders to build the future of business together.</p>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h6 class="footer-heading">Event Info</h6>
+          <ul class="footer-links">
+            <li><a href="#companies">Companies</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h6 class="footer-heading">Event Date</h6>
+          <div class="footer-event-info">
+            <div class="footer-info-item">
+              <i class="bi bi-calendar3"></i>
+              <span>July 9, 2026 — Thursday</span>
+            </div>
+            <div class="footer-info-item">
+              <i class="bi bi-clock-fill"></i>
+              <span>08:30 AM — 10:00 PM</span>
+            </div>
+            <div class="footer-info-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Grand Convention Hall, City</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ScaleUp Business Club. All rights reserved. | Designed with <i class="bi bi-heart-fill text-danger"></i> for Entrepreneurs.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></button>
+
+  <!-- Success Toast -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body toast-success-body">
+        <i class="bi bi-check-circle-fill me-2"></i> Registration successful! We'll see you on July 9, 2026!
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
