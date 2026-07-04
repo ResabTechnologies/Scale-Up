@@ -497,6 +497,25 @@
     });
   });
 
+  /* ===== FLOATING SOCIAL MENU TOGGLE ===== */
+  (function initFloatingSocial() {
+    var socialToggle = document.getElementById('socialToggle');
+    var floatingSocial = document.getElementById('floatingSocial');
+    if (!socialToggle || !floatingSocial) return;
+
+    socialToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      floatingSocial.classList.toggle('active');
+    });
+
+    // Close on click outside
+    document.addEventListener('click', function (e) {
+      if (!floatingSocial.contains(e.target)) {
+        floatingSocial.classList.remove('active');
+      }
+    });
+  }());
+
   console.log('%cScaleUp Business Club', 'color:#c9a227;font-size:18px;font-weight:bold;');
   console.log('%cBusiness Networking Hub — July 9, 2026', 'color:#9abba5;font-size:12px;');
 
